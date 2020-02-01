@@ -1,7 +1,7 @@
 @import "_config.scss";
 
 .container-fluid {
-  min-height: calc(100vh - 85px - 454px);
+  min-height: calc(100vh - 85px - 488px);
   background: lightcyan;
 }
 
@@ -51,6 +51,7 @@ header {
       list-style-type: none;
       display: inline-block;
       margin-right: 20px;
+      font-family: Poppins;
 
       &.last {
         margin: 0;
@@ -85,9 +86,15 @@ h2 {
 
 .segment-one h3 {
   font-family: Courgette;
-  color: #fff;
+  color: $red;
   letter-spacing: 3px;
   margin: 10px 0;
+}
+.segment-one img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  opacity: 0.8;
 }
 .segment-two h2 {
   color: white;

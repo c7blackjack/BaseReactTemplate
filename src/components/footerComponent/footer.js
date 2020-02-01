@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Me from "../../img/profilePic.jpg";
 
 class Footer extends Component {
   render() {
@@ -8,27 +9,27 @@ class Footer extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-3 col-sm-6 col-xs-12 segment-one">
-                <h3>LloydDM</h3>
-                <p>
-                  Aliquip ad sint voluptate ullamco Lorem Lorem magna elit sint
-                  laboris. Laborum minim mollit voluptate officia incididunt
-                  adipisicing sit nostrud nostrud magna.
-                </p>
+                <h3>| LloydDM</h3>
+                <img
+                  src={Me}
+                  alt="Travis Lloyd - Programmer/Developer/LifeLearner"
+                />
+                >
               </div>
               <div className="col-md-3 col-sm-6 col-xs-12 segment-two">
-                <h2>LloydDM</h2>
+                <h2>Useful Links</h2>
                 <ul>
                   <li>
-                    <a href="#">Something 1</a>
+                    <a href="#">About Me</a>
                   </li>
                   <li>
-                    <a href="#">Something 2</a>
+                    <a href="#">Web Design</a>
                   </li>
                   <li>
-                    <a href="#">Something 3</a>
+                    <a href="#">Particle Generator</a>
                   </li>
                   <li>
-                    <a href="#">Something 4</a>
+                    <a href="#">Employment</a>
                   </li>
                 </ul>
               </div>
