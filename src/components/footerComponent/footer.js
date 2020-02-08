@@ -10,6 +10,7 @@ class Footer extends Component {
             <div className="row">
               <div className="col-md-3 col-sm-6 col-xs-12 segment-one">
                 <h3>| LloydDM</h3>
+                <p>Developer|Life Learner| Father</p>
                 <img
                   src={Me}
                   alt="Travis Lloyd - Programmer/Developer/LifeLearner"
