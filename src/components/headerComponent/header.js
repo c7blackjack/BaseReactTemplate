@@ -31,7 +31,7 @@ class Header extends Component {
         link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 +
           0.3}s`;
       }
-      console.log(link.style.animation);
+      console.log(link);
     });
 
     //  Attempt at switching between all different possibilities
