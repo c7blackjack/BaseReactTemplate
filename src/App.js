@@ -8,6 +8,8 @@ import Homepage from "./components/pages/homePage";
 import About from "./components/pages/about";
 import Projects from "./components/pages/projects";
 import Contact from "./components/pages/contact";
+import CardLayout from "./components/pages/cardLayout";
+import Resume from "./components/pages/resume";
 
 //INCLUDES
 import "./Assets/css/default.min.css";
@@ -19,8 +21,8 @@ class App extends Component {
         <div className="App">
           <Header />
 
-          <Route exact path="/" component={About} />
-          <Route exact path="/About" component={About} />
+          <Route exact path="/" component={Resume} />
+          <Route exact path="/About" component={CardLayout} />
           <Route exact path="/Projects" component={Homepage} />
           <Route exact path="/Contact" component={Contact} />
 

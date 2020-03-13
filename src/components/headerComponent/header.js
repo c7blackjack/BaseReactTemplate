@@ -60,6 +60,7 @@ class Header extends Component {
       <header>
         <div className="logo">
           <h1>Travis Lloyd</h1>
+          <p> Developer | Programmer | Life Learner</p>
           {/*<img src={Logo} />*/}
         </div>
         <nav className="nav">
