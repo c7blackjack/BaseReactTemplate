@@ -212,39 +212,6 @@ h2 {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container-fluid .row {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: -15px;
-    height: 92vh;
-    top: 40px;
-    background: #111;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 45px;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
-    li {
-      margin: 0px;
-    }
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
-}
-
 .nav-active {
   transform: translateX(0%);
 }
@@ -344,18 +311,21 @@ h2 {
 .skillTitle {
   grid-column: 1/4;
   justify-self: center;
+  text-align: center;
 }
 
 .skillsList {
   grid-column: 1/4;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-self: center;
+  text-align: center;
 }
 
 .expTitle {
   grid-column: 1/4;
   justify-self: center;
+  text-align: center;
 }
 
 .portfolioImg {
@@ -415,4 +385,43 @@ h2 {
 
 #resumeSpecial {
   background: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid .row {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: -15px;
+    height: 92vh;
+    top: 40px;
+    background: #111;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    li {
+      margin: 0px;
+    }
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .grid {
+    display: block;
+  }
+  img {
+    display: cover;
+  }
 }

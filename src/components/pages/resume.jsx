@@ -80,6 +80,12 @@ export class resume extends Component {
                 <li>
                   <FaBootstrap /> | Bootstrap
                 </li>
+                <li>
+                  <FaWordpress /> | Wordpress
+                </li>
+                <li>
+                  <FaGulp /> | Gulp
+                </li>
               </ul>
             </div>
             <div className="list">
@@ -94,23 +100,13 @@ export class resume extends Component {
                   <DiHeroku /> | Heroku
                 </li>
                 <li>
-                  <FaJsSquare /> | JavaScript/ES6
+                  <FaJsSquare /> | JS/ES6
                 </li>
-              </ul>
-            </div>
-            <div className="list">
-              <ul id="skillTree">
                 <li>
                   <FaHtml5 /> | Html 5
                 </li>
                 <li>
                   <FaCss3Alt /> | Css3
-                </li>
-                <li>
-                  <FaWordpress /> | Wordpress
-                </li>
-                <li>
-                  <FaGulp /> | Gulp
                 </li>
               </ul>
             </div>
