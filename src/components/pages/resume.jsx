@@ -18,6 +18,14 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
 import { FaGulp } from "react-icons/fa";
+import { AiFillCalculator } from "react-icons/ai";
+import { IoIosAlarm } from "react-icons/io";
+import { IoIosContacts } from "react-icons/io";
+import { IoIosJournal } from "react-icons/io";
+import { IoMdText } from "react-icons/io";
+import { IoMdNavigate } from "react-icons/io";
+
+import { IoMdFlask } from "react-icons/io";
 
 export class resume extends Component {
   render() {
@@ -63,7 +71,7 @@ export class resume extends Component {
             </div>
           </div>
           <div className="skillTitle">
-            <h1>Skills</h1>
+            <h1>Hard Skills</h1>
           </div>
           <div className="skillsList">
             <div>
@@ -111,6 +119,57 @@ export class resume extends Component {
               </ul>
             </div>
           </div>
+
+          <div className="skillTitle">
+            <h1>Soft Skills</h1>
+          </div>
+          <div className="skillsList">
+            <div>
+              <ul id="skillTree">
+                <li>
+                  <AiFillCalculator /> | Mathematics
+                </li>
+                <li>
+                  <FaNode /> | Self-Motivated
+                </li>
+                <li>
+                  <IoMdText /> | Communication
+                </li>
+                <li>
+                  <IoIosAlarm /> | Dependability
+                </li>
+                <li>
+                  <FaWordpress /> | Adaptability
+                </li>
+                <li>
+                  <FaGulp /> | Problem-Solver
+                </li>
+              </ul>
+            </div>
+            <div className="list">
+              <ul id="skillTree">
+                <li>
+                  <IoIosContacts /> | Teamwork
+                </li>
+                <li>
+                  <IoIosJournal /> | Learnability
+                </li>
+                <li>
+                  <DiHeroku /> | Work Ethic
+                </li>
+                <li>
+                  <IoMdNavigate /> | Leadership
+                </li>
+                <li>
+                  <IoMdFlask /> | Research
+                </li>
+                <li>
+                  <FaCss3Alt /> | Multitasking
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="expTitle">
             <h1>Experience</h1>
           </div>

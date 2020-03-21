@@ -189,19 +189,6 @@ h2 {
   font-size: 16px;
 }
 
-/* responsive SCSS */
-.burger {
-  display: none;
-}
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-  border-radius: 10%;
-  transition: all 0.3s ease;
-}
-
 @media screen and (max-width: 1024px) {
   .logo h1 {
     font-size: 28px;
@@ -210,10 +197,6 @@ h2 {
     padding-top: 4rem;
     padding-bottom: 10rem;
   }
-}
-
-.nav-active {
-  transform: translateX(0%);
 }
 
 .card .cardPic {
@@ -259,38 +242,6 @@ h2 {
   &:hover {
     box-shadow: 5px 10px 20px 1px rgba(255, 250, 250, 0.2);
   }
-}
-
-@keyframes navLinkFadeIn {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes navLinkFadeOut {
-  from {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 //RESUME PAGE STYLING
@@ -383,15 +334,45 @@ h2 {
   list-style: none;
 }
 
-#resumeSpecial {
-  background: #666;
+/* responsive SCSS for Burger Menu Icon*/
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10%;
+  transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .container-fluid .row {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+/* Keyframes Section for Animations */
+
+@keyframes navLinkFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+/*  This is all mobile styling -- Should all be at the bottom of style sheet */
+@media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -399,8 +380,9 @@ h2 {
     position: absolute;
     right: -15px;
     height: 92vh;
-    top: 40px;
+    top: 50px;
     background: #111;
+    opacity: 0.7;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -412,6 +394,16 @@ h2 {
       margin: 0px;
     }
   }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .container-fluid .row {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .nav-links li {
     opacity: 0;
   }
@@ -424,4 +416,24 @@ h2 {
   img {
     display: cover;
   }
+
+  .skillsList {
+    display: block;
+    font-size: 1.4em;
+    grid-gap: 0;
+    text-align: left;
+    padding-left: 90px;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
+
+/* End of mobile Styling   */
