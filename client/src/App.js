@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //COMPONENTS
 import Header from "./components/headerComponent/header";
 import Footer from "./components/footerComponent/footer";
 import Homepage from "./components/pages/homePage";
-import About from "./components/pages/about";
-import Projects from "./components/pages/projects";
+//import About from "./components/pages/about";
+//import Projects from "./components/pages/projects";
 import Contact from "./components/pages/contact";
 import CardLayout from "./components/pages/cardLayout";
 import Resume from "./components/pages/resume";

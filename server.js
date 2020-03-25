@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const exphbs = require("express-handlebars");
 const path = require("path");
 const nodemailer = require("nodemailer");
 
@@ -23,21 +22,17 @@ app.post("/api/form", (req, res) => {
         `;
 
     let transporter = nodemailer.createTransport({
-      host: "mail.lloyddm.com",
-      port: 485,
+      host: "lloyddm.com",
+      port: 465,
+      secure: false,
       auth: {
-        user: "myemail@email.com",
-        pass: "mypassword"
+        user: "travislloyd@lloyddm.com",
+        pass: "Charliegirl231!"
       }
     });
 
     let mailOptions = {
-      from: `${req.body.email}`,
-      to: "travislloyd@lloyddm.com",
-      replyTo: `${req.body.email}`,
-      subject: "New Message",
-      text: req.body.message,
-      html: htmlEmail
+      subject: "New Message"
     };
 
     transporter.sendMail(mailOptions, (err, info) => {
