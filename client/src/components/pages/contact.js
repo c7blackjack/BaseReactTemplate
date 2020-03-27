@@ -15,6 +15,34 @@ class Contact extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+  onSubmit = e => {
+    e.preventDefault();
+
+    if (this.state.name === "") {
+      this.setState({
+        nameError: "Please provide your name"
+      });
+    } else {
+      this.setState({ nameError: "" });
+    }
+
+    if (this.state.email === "") {
+      this.setState({
+        emailError: "Please provide an email address"
+      });
+    } else if (
+      this.state.email === "/^((?!@(>)*$/" ||
+      this.state.email.indexOf(".") === -1
+    ) {
+      this.setState({
+        emailError: "Please provide a valid email address"
+      });
+    } else {
+      this.setState({
+        emailError: ""
+      });
+    }
+  };
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -43,7 +71,7 @@ class Contact extends Component {
           </div>
 
           <div className="col-md-6">
-            <Form onSubmit={this.handleSubmit}>
+            <Form role="form" id="emailForm" onSubmit={this.handleSubmit}>
               <FormGroup>
                 <Label for="name">Name</Label>
                 <Input
