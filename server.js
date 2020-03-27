@@ -1,3 +1,5 @@
+const http = require("http");
+const port = 3001;
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
@@ -5,6 +7,24 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 
+app.get("/", function(req, res) {
+  res.render("index", {});
+});
+
+const server = http.createServer(function(req, res) {
+  res.writeHead(200, { "Content-Type": "text/html" });
+  res.write("Hello Node");
+  res.end();
+});
+
+server.listen(port, function(error) {
+  if (error) {
+    console.log("something went wrong", error);
+  }
+  console.log("Server listening on port: ", port);
+});
+
+/*      Email Server Backend      */
 //Bodyparser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -61,8 +81,8 @@ app.post("/api/form", (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
+// const PORT = process.env.PORT || 3001;
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server listening on port ${PORT}`);
+// });
