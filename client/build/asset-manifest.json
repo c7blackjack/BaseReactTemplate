@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.279e6fbb.chunk.css",
+    "main.js": "/static/js/main.614e1278.chunk.js",
+    "main.js.map": "/static/js/main.614e1278.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cfae3202.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cfae3202.js.map",
+    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
+    "static/js/2.3e124d1d.chunk.js": "/static/js/2.3e124d1d.chunk.js",
+    "static/js/2.3e124d1d.chunk.js.map": "/static/js/2.3e124d1d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ccb9480a42fd1f363430e40843ed9ed3.js": "/precache-manifest.ccb9480a42fd1f363430e40843ed9ed3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
+    "static/css/main.279e6fbb.chunk.css.map": "/static/css/main.279e6fbb.chunk.css.map",
+    "static/js/2.3e124d1d.chunk.js.LICENSE.txt": "/static/js/2.3e124d1d.chunk.js.LICENSE.txt",
+    "static/media/lloyddmThumb.png": "/static/media/lloyddmThumb.16cbb0bd.png",
+    "static/media/default.min.css": "/static/media/profilePic.9ad75283.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfae3202.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.3e124d1d.chunk.js",
+    "static/css/main.279e6fbb.chunk.css",
+    "static/js/main.614e1278.chunk.js"
+  ]
+}
