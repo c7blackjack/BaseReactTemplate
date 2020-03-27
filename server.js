@@ -1,27 +1,40 @@
-const http = require("http");
-const port = 3001;
+const { createServer } = require("http");
 const express = require("express");
-const bodyParser = require("body-parser");
+const compression = require("compression");
+const morgan = require("morgan");
 const path = require("path");
+const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 
+const normalizePort = port => parseInt(port, 10);
+const PORT = normalizePort(process.env.PORT || 5000);
+
 const app = express();
+const dev = app.get("env") !== "production";
 
-app.get("/", function(req, res) {
-  res.render("index", {});
-});
+if (!dev) {
+  app.disable("x-powered-by");
+  app.use(compression());
+  app.use(morgan("common"));
 
-const server = http.createServer(function(req, res) {
-  res.writeHead(200, { "Content-Type": "text/html" });
-  res.write("Hello Node");
-  res.end();
-});
+  app.use(express.static(path.resolve(__dirname, "build")));
 
-server.listen(port, function(error) {
-  if (error) {
-    console.log("something went wrong", error);
-  }
-  console.log("Server listening on port: ", port);
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "build", "index.html"));
+  });
+}
+
+if (dev) {
+  app.use(morgan("dev"));
+}
+
+const server = createServer(app);
+
+/*      Server Listener     */
+
+server.listen(PORT, err => {
+  if (err) throw err;
+  console.log("Server listening on port: ", PORT);
 });
 
 /*      Email Server Backend      */
