@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Particles from "react-particles-js";
+import { useTrail, animated } from "react-spring";
 
 const particleParams = {
   particles: {
@@ -13,10 +14,30 @@ const particleParams = {
     color: {
       value: "#c65039"
     },
+    opacity: {
+      value: 1,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 2,
+        opacity_min: 0,
+        sync: false
+      }
+    },
+    size: {
+      value: 3,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 20,
+        size_min: 0,
+        sync: false
+      }
+    },
     line_linked: {
       enable: true,
       color: "#c65039",
-      opacity: 0.89,
+      opacity: 0.95,
       width: 2
     }
   },
@@ -53,16 +74,13 @@ const particleParams = {
 class Homepage extends Component {
   render() {
     return (
-      <div className="container">
+      //<div className="container">
+      <div className="particles">
+        <h1>Hi! My name is Travis!</h1>
+        <h2>I am a self-taught developer and life-learner</h2>
         <Particles params={particleParams} />
-        {/* <h1>
-                    Home Page Content
-                </h1>
-
-                <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p> */}
       </div>
+      //</div>
     );
   }
 }

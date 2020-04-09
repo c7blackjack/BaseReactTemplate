@@ -35,24 +35,6 @@ class Header extends Component {
       }
       console.log(link);
     });
-
-    //  Attempt at switching between all different possibilities
-
-    //   if (link.style.animation === "navLinkFadeIn") {
-    //     console.log("Testy1");
-    //     link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 +
-    //       0.3}s`;
-    //   } else if (link.style.animation === "navLinkFadeOut") {
-    //     console.log("Testy2");
-    //     link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 +
-    //       0.3}s`;
-    //   } else if (link.style.animation === "") {
-    //     console.log("Testy3");
-    //     link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 +
-    //       0.3}s`;
-    //   }
-    //   console.log(link.style.animation);
-    // });
     //Burger Animation
     burger.classList.toggle("toggle");
   }
@@ -60,31 +42,22 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <div className="logoimg">
-          <img
-            id="imageStyle"
-            src={Me}
-            alt="Travis Lloyd - Programmer/Developer/LifeLearner"
-          />
-        </div>
         <div className="logo">
-          <div>
-            <h1>Travis Lloyd</h1>
-            <p> Developer | Programmer | Life Learner</p>
-          </div>
+          <h1>Travis Lloyd</h1>
+          <p> Developer | Life Learner</p>
           {/*<img src={Logo} />*/}
         </div>
 
         <nav className="nav">
-          <ul className="nav-links">
+          <ul className="nav-links" onClick={this.clickHandler}>
             <li className="first">
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Projects">Projects</Link>
+              <Link to="/Resume">Resume</Link>
             </li>
             <li>
-              <Link to="/About">About</Link>
+              <Link to="/Skills">Skills</Link>
             </li>
             <li className="last">
               <Link to="/Contact">Contact</Link>

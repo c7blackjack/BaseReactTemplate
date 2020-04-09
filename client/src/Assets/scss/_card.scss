@@ -1,0 +1,32 @@
+.card .cardPic {
+  padding-top: 1.5rem;
+}
+
+#cardFavicon {
+  color: #c65039;
+  font-size: 6rem;
+}
+
+.card {
+  width: 20rem;
+  margin: 15px;
+  border-radius: 5px;
+}
+.card .row {
+  padding-top: 10px;
+}
+
+.card-body {
+  padding: 3rem 0 !important;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.9rem;
+  color: black;
+}
+.card-title {
+  color: $red;
+  font-family: Courgette;
+  font-size: 1.5em;
+}

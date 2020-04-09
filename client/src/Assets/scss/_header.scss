@@ -1,0 +1,74 @@
+header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  display: block;
+  width: 100%;
+  background: $black;
+  color: $white;
+  z-index: 15;
+  //height: 85px;
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    @include translateY(-50%);
+    font-family: Courgette;
+    color: $red;
+    padding-top: 1rem;
+    padding-left: 50px;
+    padding-bottom: none;
+  }
+
+  .logo h1 {
+    font-size: 36px;
+  }
+
+  .logoimg {
+    padding-left: 30px;
+  }
+
+  .logo p {
+    padding-bottom: 0.5rem;
+    padding-top: none;
+    color: $white;
+  }
+  /* NAVIGATION STYLING */
+  nav,
+  nav ul,
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    @include translateY(-50%);
+
+    button {
+      color: white;
+    }
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px;
+      font-family: Poppins;
+
+      &.last {
+        margin: 0;
+      }
+
+      a {
+        color: $white;
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+  }
+
+  /* END OF NAVIGATION STYLING */
+}

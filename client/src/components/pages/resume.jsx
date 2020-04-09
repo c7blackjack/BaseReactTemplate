@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import Me from "../../img/profilePic.jpg";
+//import Me from "../../img/profilePic.jpg";
 import Lloyddm from "../../img/lloyddmThumb.png";
 import Heroku from "../../img/Heroku_landing.jpeg";
+import Developer from "../../img/selfie.jpg";
 
-import Card from "./imageCard";
+//import Card from "./imageCard";
 
 //Favicon imports
 import { FaReact } from "react-icons/fa";
@@ -36,41 +37,32 @@ export class resume extends Component {
     return (
       <div className="container">
         <div className="grid">
-          {/* <div className="info">
-            <img
-              id="imageStyle"
-              src={Me}
-              alt="Travis Lloyd - Programmer/Developer/LifeLearner"
-            />
-            <h1>Contact Info</h1>
-            <h2>
-              <a href="tel:661-414-4027">Lets Chat!</a>
-            </h2>
-            <h2>
-              <a href="mailto:TravisLloyd@Lloyddm.com?subject=Subject">
-                TravisLloyd@Lloyddm.com
-              </a>
-            </h2>
-          </div> */}
+          <div className="hero">
+            <img src={Developer} alt="Developer of this website" />
+          </div>
           <div className="summary">
             <div>
               <h1 id="testcss">Summary</h1>
             </div>
             <div>
               <p>
-                I have been a long believer in life learning. There is always
-                more to learn, no matter which direction life takes. This is
-                especially true when it comes to web development (considering
-                there are, what seems to be, an endless variety of languages,
-                libraries, frameworks and API's). I am also a firm believer that
-                no matter where you end up, you were meant to be there and to
-                learn something from that. In my time at The Cheesecake factory,
-                I have learned how to strive independently and as an intricate
-                part of a team within a fast paced environment. From there, I
-                have also learned how to own yourself in success and in failure
-                and how to adapt and overcome those hurdles. Problem solving and
-                streamlining processes to become a better team member and friend
-                have been my greatest skillsets within the workplace.
+                I am a strong believer in lifelong learning. I majored in
+                mathematics and minored in computer science because I enjoy that
+                type of abstract thinking. The languages of web development are
+                similar to mathematics in that you have a problem to solve and
+                you solve it cryptically using mathematical functions. I am
+                continually learning new web development skills (languages,
+                libraries, frameworks and APIs) to stay current in the
+                technology field as a small side business. As an employee, I am
+                a loyal team player having worked for the same company since
+                2005 until COVID-19 shut down the services industry. Working in
+                the services industry, I developed transferable skills of
+                responsibility for management, team coordination, interpersonal
+                communication, and problem-solving in a fast-paced environment.
+                Problem solving and streamlining processes are my greatest
+                skillsets within the workplace. With the current economic
+                environment, it is the perfect time to transfer my development
+                and workplace skills into a technology-related field.
               </p>
             </div>
           </div>
@@ -81,44 +73,44 @@ export class resume extends Component {
             <div>
               <ul id="skillTree">
                 <li>
-                  <FaReact /> | React
+                  <FaReact color="#c65039" /> | React
                 </li>
                 <li>
-                  <FaNode /> | Node
+                  <FaNode color="#c65039" /> | Node
                 </li>
                 <li>
-                  <FaSass /> | Sass
+                  <FaSass color="#c65039" /> | Sass
                 </li>
                 <li>
-                  <FaBootstrap /> | Bootstrap
+                  <FaBootstrap color="#c65039" /> | Bootstrap
                 </li>
                 <li>
-                  <FaWordpress /> | Wordpress
+                  <FaWordpress color="#c65039" /> | Wordpress
                 </li>
                 <li>
-                  <FaGulp /> | Gulp
+                  <FaGulp color="#c65039" /> | Gulp
                 </li>
               </ul>
             </div>
-            <div className="list">
+            <div>
               <ul id="skillTree">
                 <li>
-                  <FaNpm /> | NPM
+                  <FaNpm color="#c65039" /> | NPM
                 </li>
                 <li>
-                  <FaGithub /> | Github
+                  <FaGithub color="#c65039" /> | Github
                 </li>
                 <li>
-                  <DiHeroku /> | Heroku
+                  <DiHeroku color="#c65039" /> | Heroku
                 </li>
                 <li>
-                  <FaJsSquare /> | JS/ES6
+                  <FaJsSquare color="#c65039" /> | JS/ES6
                 </li>
                 <li>
-                  <FaHtml5 /> | Html 5
+                  <FaHtml5 color="#c65039" /> | Html 5
                 </li>
                 <li>
-                  <FaCss3Alt /> | Css3
+                  <FaCss3Alt color="#c65039" /> | Css3
                 </li>
               </ul>
             </div>
@@ -131,44 +123,44 @@ export class resume extends Component {
             <div>
               <ul id="skillTree">
                 <li>
-                  <AiFillCalculator /> | Mathematics
+                  <AiFillCalculator color="#c65039" /> | Mathematics
                 </li>
                 <li>
-                  <IoIosMedal /> | Driven
+                  <IoIosMedal color="#c65039" /> | Driven
                 </li>
                 <li>
-                  <IoIosChatboxes /> | Communication
+                  <IoIosChatboxes color="#c65039" /> | Communication
                 </li>
                 <li>
-                  <IoIosAlarm /> | Dependability
+                  <IoIosAlarm color="#c65039" /> | Dependability
                 </li>
                 <li>
-                  <IoMdGitNetwork /> | Collaborative
+                  <IoMdGitNetwork color="#c65039" /> | Collaborative
                 </li>
                 <li>
-                  <IoIosPin /> | Troubleshooting
+                  <IoIosPin color="#c65039" /> | Troubleshooting
                 </li>
               </ul>
             </div>
             <div className="list">
               <ul id="skillTree">
                 <li>
-                  <IoIosContacts /> | Teamwork
+                  <IoIosContacts color="#c65039" /> | Teamwork
                 </li>
                 <li>
-                  <IoIosMove /> | Adaptive
+                  <IoIosMove color="#c65039" /> | Adaptive
                 </li>
                 <li>
-                  <GoLaw /> | Work Ethic
+                  <GoLaw color="#c65039" /> | Work Ethic
                 </li>
                 <li>
-                  <IoMdNavigate /> | Leadership
+                  <IoMdNavigate color="#c65039" /> | Leadership
                 </li>
                 <li>
-                  <IoMdAnalytics /> | Analytics
+                  <IoMdAnalytics color="#c65039" /> | Analytics
                 </li>
                 <li>
-                  <GoChecklist /> | Time Management
+                  <GoChecklist color="#c65039" /> | Time Management
                 </li>
               </ul>
             </div>
@@ -185,7 +177,9 @@ export class resume extends Component {
             />
           </div>
           <div className="portfolioContent">
-            <h2>LloydDm.com</h2>
+            <a href="https://www.lloyddm.com">
+              <h2>LloydDm.com</h2>
+            </a>
             <p>
               This is one of my first websites I built for myself. The tools I
               used to build this site were: Html, Css, Bootstrap, JavaScript,
@@ -201,7 +195,9 @@ export class resume extends Component {
             />
           </div>
           <div className="portfolioContent">
-            <h2>Heroku/Git Projects</h2>
+            <a href="https://github.com/c7blackjack">
+              <h2>Heroku/Git Projects</h2>
+            </a>
           </div>
         </div>
       </div>

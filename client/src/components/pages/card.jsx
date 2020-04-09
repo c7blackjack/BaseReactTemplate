@@ -9,9 +9,9 @@ const devCardIcon = props => {
       <div className="card-body text-light">
         <h4 className="card-title">{props.title}</h4>
         <p className="card-text">{props.cardContent}</p>
-        <a href="#" className="btn btn-outline-success">
+        {/* <a href="#" className="btn btn-outline-success">
           Go Here
-        </a>
+        </a> */}
       </div>
     </div>
   );

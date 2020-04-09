@@ -1,0 +1,65 @@
+@mixin transition($e) {
+  -webkit-transition: $e;
+  -moz-transition: $e;
+  transition: $e;
+}
+
+#contactImg {
+  border-radius: 8px;
+}
+
+.contactInfo h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Courgette;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font-size: 50px;
+  line-height: 2.5em;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #c65039;
+}
+
+.contactInfo h2 {
+  font-family: Courgette;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  @include transition(0.4s ease-in-out);
+  cursor: pointer;
+  color: #fff;
+}
+
+a:hover {
+  color: #c65039;
+  @include transition(0.4s ease-in-out);
+}
+
+/* .contactInfo h2 a {
+  color: #ffffff;
+} */
+
+.row {
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+
+#contactImg {
+  width: 600px;
+  opacity: 0.9;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.contactInfo {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  #contactImg {
+    width: 450px;
+  }
+}

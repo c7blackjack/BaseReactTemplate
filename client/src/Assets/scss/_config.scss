@@ -29,15 +29,13 @@ html {
   background: $black;
 }
 body {
+  margin-top: 100px;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: $black;
   font-weight: 400;
   font-style: normal;
-  background-color: #333;
-}
-footer {
-  margin-top: auto;
+  background-color: #fff;
 }
 
 a {

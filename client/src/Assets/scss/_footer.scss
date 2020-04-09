@@ -1,0 +1,50 @@
+/* FOOTER STYLING */
+
+.footer {
+  height: 200px;
+  background: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.follow {
+  height: 60px;
+  h1 {
+    color: #c65039;
+    font-family: Courgette;
+    padding-top: 10px;
+  }
+}
+#rights {
+  margin-top: 10px !important;
+}
+
+.social {
+  text-align: center;
+  height: 90px;
+}
+
+.social a {
+  background: #666;
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 40px;
+  line-height: 45px;
+}
+.social a i {
+  color: #fff;
+  line-height: 40px;
+  &:hover {
+    text-decoration: none;
+    color: $red;
+    @include transition(0.4s ease-in-out);
+  }
+}
+
+/* END FOOTER STYLING */

@@ -1,13 +1,20 @@
 @import "_config.scss";
+@import "_footer.scss";
+@import "_header.scss";
+@import "_cardLayout.scss";
+@import "_resume.scss";
+@import "_card.scss";
 
 .App {
-  // background-image: url("../../img/profilePic.jpg");
-  // background-size: cover;
-  background-color: #333;
-}
-.background {
-  background-image: url("../../img/profilePic.jpg");
+  background-image: url(../../img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+}
+
+.container {
+  opacity: 0.98;
 }
 
 p {
@@ -15,362 +22,12 @@ p {
   line-height: 25px;
 }
 
-h2,
-h3 {
+h2 {
+  font-size: 18px;
   color: #fff;
   padding: 10px;
 }
-h2 {
-  font-size: 18px;
-}
-.container {
-  margin-top: 15vh;
-}
 
-.container-fluid {
-  min-height: calc(100vh - 85px - 488px);
-  background: snow;
-}
-
-#cardLayout {
-  background: #333;
-}
-
-.cardContent {
-  color: black;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  height: 15vh;
-  display: block;
-  width: 100%;
-  background: $black;
-  color: $white;
-  //height: 85px;
-
-  .logo {
-    position: absolute;
-    top: 50%;
-    left: 115px;
-    @include translateY(-50%);
-    font-family: Courgette;
-    color: $red;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-bottom: none;
-  }
-
-  .logoimg {
-    padding-left: 30px;
-  }
-
-  .logo p {
-    padding-bottom: 0.5rem;
-    padding-top: none;
-    color: $white;
-  }
-
-  /* NAVIGATION STYLING */
-  nav,
-  nav ul,
-  nav ul li {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    @include translateY(-50%);
-
-    button {
-      color: white;
-    }
-
-    ul li {
-      list-style-type: none;
-      display: inline-block;
-      margin-right: 20px;
-      font-family: Poppins;
-
-      &.last {
-        margin: 0;
-      }
-
-      a {
-        color: $white;
-        font-size: 20px;
-        line-height: normal;
-      }
-    }
-  }
-}
-
-/* END OF NAVIGATION STYLING */
-
-/* FOOTER STYLING */
-
-.footer-top {
-  background: #111;
-  padding-bottom: 80px;
-  padding-top: 5px;
-}
-
-.segment-one h3 {
-  font-family: Courgette;
-  color: $red;
-  letter-spacing: 3px;
-  margin: 10px 0;
-}
-#imageStyle {
-  padding-top: 10px;
-  width: 100%;
-  height: 100%;
-  // border-radius: 50%;
-  opacity: 0.1;
-}
-.segment-two h2 {
-  color: white;
-  font-family: Poppins;
-  text-transform: uppercase;
-  margin: 10px 0;
-  padding-top: 10px;
-}
-.segment-two h2:before {
-  content: "|";
-  color: #c65039;
-  padding-right: 10px;
-}
-.segment-two ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.segment-two ul li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  line-height: 40px;
-}
-.segment-two ul li a {
-  color: #999;
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-    color: $red;
-    @include transition(0.4s ease-in-out);
-  }
-}
-.segment-three h2 {
-  color: white;
-  font-family: Poppins;
-  text-transform: uppercase;
-  margin: 10px 0;
-  padding-top: 10px;
-}
-.segment-three h2:before {
-  content: "|";
-  color: #c65039;
-  padding-right: 10px;
-}
-.segment-three a {
-  background: #494848;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 5px;
-}
-.segment-three a i {
-  font-size: 20px;
-  color: #fff;
-  padding: 10px 12px;
-  &:hover {
-    text-decoration: none;
-    color: $red;
-    @include transition(0.4s ease-in-out);
-  }
-}
-
-.segment-four h2 {
-  color: white;
-  font-family: Poppins;
-  text-transform: uppercase;
-  margin: 10px 0;
-  padding-top: 10px;
-}
-.segment-four h2:before {
-  content: "|";
-  color: #c65039;
-  padding-right: 10px;
-}
-.footer-bottom-text {
-  background: #000;
-  text-align: center;
-  font-family: Poppins;
-  line-height: 75px;
-  font-size: 16px;
-}
-
-/* END FOOTER STYLING */
-
-@media screen and (max-width: 1024px) {
-  .logo h1 {
-    font-size: 28px;
-  }
-  .container-fluid .row {
-    padding-top: 4rem;
-    padding-bottom: 10rem;
-  }
-}
-
-.card .cardPic {
-  padding-top: 1.5rem;
-}
-
-#cardFavicon {
-  color: #c65039;
-  font-size: 6rem;
-}
-
-.card {
-  width: 20rem;
-  margin: 15px;
-  border-radius: 5px;
-}
-.card .row {
-  padding-top: 10px;
-}
-
-.card-body {
-  padding: 3rem 0 !important;
-}
-
-.card-text {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.9rem;
-  color: black;
-}
-.card-title {
-  color: $red;
-  font-family: Courgette;
-  font-size: 1.5em;
-}
-
-.container-fluid .row {
-  padding-top: 4rem;
-}
-
-#infoCard {
-  background: lightgray;
-  height: 504.9px;
-  &:hover {
-    box-shadow: 5px 10px 20px 1px rgba(255, 250, 250, 0.2);
-  }
-}
-
-//RESUME PAGE STYLING
-
-//Grid Layout Style
-
-.summary {
-  grid-column: 1/4;
-  text-align: center;
-  justify-self: center;
-  line-height: 3em;
-  font-size: 1.2em;
-}
-
-.info {
-  text-align: center;
-  justify-self: center;
-}
-
-.skillTitle {
-  grid-column: 1/4;
-  justify-self: center;
-  text-align: center;
-}
-
-.skillsList {
-  padding-top: 0;
-  grid-column: 1/4;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 1.35em;
-  justify-self: center;
-  text-align: center;
-}
-
-.expTitle {
-  grid-column: 1/4;
-  justify-self: center;
-  text-align: center;
-}
-
-.portfolioImg {
-  img {
-    width: 100%;
-    padding-bottom: 50px;
-    align-items: center;
-    //max-width: 510px;
-    //max-height: 267px;
-    opacity: 0.4;
-    &:hover {
-      box-shadow: 5px 10px 20px 1px rgba(255, 250, 250, 0.2);
-      opacity: 1;
-    }
-  }
-}
-
-.portfolioContent {
-  grid-column: 2/4;
-  text-align: center;
-}
-
-.grid {
-  padding-bottom: 50px;
-  display: grid;
-  //grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2em;
-  margin-top: 20px;
-  background: #333;
-  color: #999;
-  font-family: Poppins;
-  // line-height: 2em;
-  // font-size: 1.2em;
-  a {
-    color: #999;
-    &:hover {
-      color: $red;
-    }
-  }
-  h1 {
-    line-height: 2.5em;
-    font-size: 1.7em;
-    font-family: Courgette;
-    color: $white;
-    text-decoration: underline;
-    text-decoration-color: $red;
-  }
-  h2 {
-    font-size: 1.5em;
-    font-family: Courgette;
-    color: #999;
-  }
-}
-
-// End Grid Layout
-
-#skillTree {
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  li {
-    line-height: 1.25em;
-  }
-}
 .contact-form {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -378,6 +35,31 @@ header {
   h1 {
     color: $white;
   }
+}
+
+.particles {
+  //background: rgba(220, 220, 220, 0.98);
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.9);
+  h1 {
+    color: #c65039;
+    color: #fff;
+    font-family: Courgette;
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+    font-family: Poppins;
+  }
+}
+
+.welcome {
+  background: rgba(20, 20, 20, 0.98);
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+  font-family: Poppins;
 }
 
 /* responsive SCSS for Burger Menu Icon*/
@@ -422,6 +104,16 @@ header {
   body {
     overflow-x: hidden;
   }
+
+  .hero img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+
   .nav-links {
     position: absolute;
     right: -15px;
@@ -457,8 +149,8 @@ header {
   }
 
   .container-fluid .row {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .nav-links li {
@@ -472,14 +164,6 @@ header {
   }
   img {
     display: cover;
-  }
-
-  .skillsList {
-    display: block;
-    font-size: 1.4em;
-    grid-gap: 0;
-    text-align: left;
-    padding-left: 90px;
   }
 
   .toggle .line1 {

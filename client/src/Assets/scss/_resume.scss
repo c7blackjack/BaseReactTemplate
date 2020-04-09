@@ -1,0 +1,127 @@
+.grid {
+  margin-top: 100px;
+  padding: 60px;
+  display: grid;
+  //grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5em;
+  background: #333;
+  color: #999;
+  font-family: Poppins;
+  // line-height: 2em;
+  // font-size: 1.2em;
+  a {
+    color: #999;
+    &:hover {
+      color: $red;
+    }
+  }
+  h1 {
+    line-height: 2.5em;
+    font-size: 1.7em;
+    font-family: Courgette;
+    color: $white;
+    text-decoration: underline;
+    text-decoration-color: $red;
+  }
+  h2 {
+    font-size: 1.5em;
+    font-family: Courgette;
+    color: #999;
+  }
+}
+
+.hero {
+  grid-column: 1/4;
+  justify-self: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  img {
+    border-radius: 8px;
+    width: 75%;
+  }
+}
+
+//Grid Layout Style
+
+.summary {
+  grid-column: 1/4;
+  text-align: center;
+  justify-self: center;
+  line-height: 3em;
+  font-size: 1.2em;
+}
+
+.skillTitle {
+  grid-column: 1/4;
+  justify-self: center;
+  text-align: center;
+}
+
+.skillsList {
+  padding-top: 0;
+  padding-left: 40px;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  font-size: 1.35em;
+  justify-self: center;
+  text-align: left;
+}
+
+.expTitle {
+  grid-column: 1/4;
+  justify-self: center;
+  text-align: center;
+}
+
+.portfolioImg {
+  img {
+    width: 100%;
+    //padding-bottom: 50px;
+    align-items: center;
+    //max-width: 510px;
+    //max-height: 267px;
+    opacity: 0.4;
+    &:hover {
+      box-shadow: 5px 10px 20px 1px rgba(255, 250, 250, 0.2);
+      opacity: 1;
+    }
+  }
+}
+
+.portfolioContent {
+  grid-column: 2/4;
+  text-align: center;
+  padding-bottom: 50px;
+  a h2 {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+// End Grid Layout
+
+#skillTree {
+  text-decoration: none;
+  list-style: none;
+  //max-width: 250px;
+  margin: 0;
+  padding: 0;
+
+  li {
+    line-height: 1.25em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skillsList {
+    display: block;
+    font-size: 1.2em;
+    grid-gap: 0;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
