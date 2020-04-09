@@ -3,6 +3,10 @@
   "homepage": "https://lloyddm-testsite.herokuapp.com/",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "npm": "6.13.7",
+    "node": "10.4.0"
+  },
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
