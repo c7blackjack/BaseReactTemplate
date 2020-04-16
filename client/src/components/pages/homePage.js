@@ -76,7 +76,7 @@ class Homepage extends Component {
     return (
       //<div className="container">
       <div className="particles">
-        <h1>Hi! My name is Travis!</h1>
+        <h1>Hi! I am a Web Developer and Life-Long Learner</h1>
         <h2>I am a self-taught developer and life-learner</h2>
         <Particles params={particleParams} />
       </div>

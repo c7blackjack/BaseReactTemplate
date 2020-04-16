@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import me from "../../img/profilePic.jpg";
-import "../../Assets/scss/contact.scss";
 
 class Form extends Component {
   render() {
