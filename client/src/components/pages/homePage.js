@@ -1,6 +1,7 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import Particles from "react-particles-js";
-import { useTrail, animated } from "react-spring";
+import { Link } from "react-router-dom";
+//import { useTrail, animated } from "react-spring";
 
 const particleParams = {
   particles: {
@@ -76,8 +77,11 @@ class Homepage extends Component {
     return (
       //<div className="container">
       <div className="particles">
-        <h1>Hi! I am a Web Developer and Life-Long Learner</h1>
-        <h2>I am a self-taught developer and life-learner</h2>
+        <h1>Hi! I am a Web Developer</h1>
+        <h2>Want to chat or collaborate?</h2>
+        <button type="button" className="btn btn-info">
+          <Link to="/Contact">Get In Touch</Link>
+        </button>
         <Particles params={particleParams} />
       </div>
       //</div>
